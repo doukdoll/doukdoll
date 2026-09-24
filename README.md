@@ -1,59 +1,33 @@
-<h1 align="center">Hi, I'm doukdoll 👋</h1>
+# doukdoll
 
-<p align="center">
-  <strong>Backend · Real-time · IoT</strong><br />
-  서비스를 만들고, 데이터의 흐름을 연결합니다.
-</p>
+백엔드를 중심으로 **실시간 데이터가 서비스의 기능으로 이어지는 과정**을 만듭니다. API와 데이터 흐름을 구현하고, 실행·검증 과정에서 발견한 문제를 문서로 남깁니다.
 
-<p align="center">
-  프로젝트에서 사용하는 기술
-</p>
+## Selected projects
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-0F172A?style=flat-square" alt="Java" />
-  <img src="https://img.shields.io/badge/Spring%20Boot-0F766E?style=flat-square" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/MySQL-0F172A?style=flat-square" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Redis-0F172A?style=flat-square" alt="Redis" />
-  <img src="https://img.shields.io/badge/Docker-0F172A?style=flat-square" alt="Docker" />
-  <img src="https://img.shields.io/badge/MQTT-0F766E?style=flat-square" alt="MQTT" />
-</p>
+### 수어 기반 기차 예매 키오스크
 
-대표 프로젝트
+웹캠의 수어 입력을 역 이름 인식과 열차 조회로 연결하는 키오스크 프로토타입입니다.
 
-🚆 수어 기반 기차 예매 키오스크
+- 브라우저에서 추출한 MediaPipe 키포인트를 WebSocket으로 전달하고, Spring Boot 중계를 거쳐 Python 서버의 ONNX 모델로 추론합니다.
+- 열차 시간표 조회 API와 키오스크 화면을 연결하고, 인식 세션의 재접속·초기화 흐름을 구현했습니다.
+- 실제 철도 예매 및 결제 서비스와 연결된 제품은 아닙니다. 구현 범위와 검증 결과를 저장소에 구분해 기록했습니다.
 
-웹캠으로 입력한 수어 동작을 출발역·도착역 인식과 열차 조회로 연결하는 키오스크 프로토타입입니다.
+`React` · `TypeScript` · `Spring Boot` · `WebSocket` · `Python` · `ONNX Runtime`
 
-React TypeScript Spring Boot Python ONNX Runtime
+[저장소](https://github.com/doukdoll/sign_language_ver.2) · [시스템 흐름](https://github.com/doukdoll/sign_language_ver.2#%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%9D%90%EB%A6%84) · [연동 검증 기록](https://github.com/doukdoll/sign_language_ver.2/blob/main/docs/LIVE_RECOGNITION_CHECK.md)
 
-브라우저의 MediaPipe 키포인트 추출부터 WebSocket 중계, ONNX 추론까지 연결합니다. 구현 상태와 제한 사항, 모듈별 검증 절차를 문서로 정리했습니다.
+### SmartFishTank
 
-저장소 살펴보기 → · 시스템 흐름 · CI 검증 기록
+해수어항의 센서 데이터를 수집하고 상태를 확인하는 IoT 프로젝트입니다. 백엔드와 인프라를 중심으로 작업했습니다.
 
-🐠 SmartFishTank
+- MQTT로 들어오는 기기 데이터를 API와 저장소에 연결하고, MySQL·Redis·Docker Compose 기반 실행 환경을 다룹니다.
+- 기기 시계 오차 때문에 오래된 센서 값이 최신으로 선택되던 문제를 서버 수신 시각 기준으로 수정했습니다.
+- 로컬 실행 방식, 환경변수 차이, MQTT 연결 문제와 배포 과정을 문서화했습니다.
 
-해수어항 IoT 모니터링을 위한 백엔드·인프라 프로젝트입니다.
+`Java` · `Spring Boot` · `MySQL` · `Redis` · `MQTT` · `Docker Compose`
 
-Spring Boot MySQL Redis MQTT Docker
+[저장소](https://github.com/doukdoll/SmartFishTank) · [실행 및 트러블슈팅](https://github.com/doukdoll/SmartFishTank#%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85) · [협업 기록](https://github.com/doukdoll/SmartFishTank/blob/master/docs/gitlab-history/README.md)
 
-MQTT 연동과 데이터 저장소, Docker Compose 기반 실행 환경을 다룹니다. 로컬 개발과 배포 환경의 차이, 실행 중 마주칠 수 있는 문제와 해결 방법을 문서로 정리했습니다.
+---
 
-저장소 살펴보기 → · 실행·트러블슈팅 가이드 · GitLab 협업 기록
-
-<p align="center">
-  <sub>코드와 함께, 연결 과정과 해결한 문제를 기록합니다.</sub>
-</p>
-
-<!--
-맞춤 설정 팁
-1. 각 프로젝트에서 본인이 맡은 역할을 확인한 뒤 한 줄씩 추가하세요.
-2. 프로젝트 README에 실제 데모 GIF나 화면 캡처를 넣으면 결과물을 더 쉽게 보여줄 수 있습니다.
-3. 공개할 연락처가 정해지면 맨 아래에 추가하세요. 이 초안에는 이메일을 넣지 않았습니다.
-4. GitHub 통계 카드나 잔디 애니메이션은 선택 사항입니다. 대표 프로젝트보다 아래에 두는 구성을 권합니다.
-
-초안 작성 참고 (2026-09-24 확인)
-- https://github.com/doukdoll/sign_language_ver.2/blob/main/README.md
-- https://github.com/doukdoll/SmartFishTank/blob/master/README.md
-- https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme
-- https://shields.io/badges/static-badge
--->
+<sub>코드와 함께 설계 의도, 검증 과정, 해결한 문제를 기록합니다.</sub>
