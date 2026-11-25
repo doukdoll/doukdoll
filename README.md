@@ -70,6 +70,20 @@
 
 [연동 검증 기록 ↗](https://github.com/doukdoll/sign_language_ver.2/blob/main/docs/LIVE_RECOGNITION_CHECK.md) · [자동 검증 범위 ↗](https://github.com/doukdoll/sign_language_ver.2/blob/main/docs/CI.md)
 
+<br />
+
+### 🧭 [Neoulteo](https://github.com/doukdoll/Neoulteo)
+
+> 공공 관광 데이터와 지도로 여행지를 찾고 일자별 코스를 만드는 여행 플랫폼 · RAG 여행 도우미 담당
+
+<img src="./assets/readme/flow-neoulteo.svg" width="100%" alt="관광지 DB 인덱싱 → 키워드 후보·연관어 확장 → 임베딩 재정렬 → RAG와 Tool 결합 답변. 직접 다룬 단계: 임베딩 재정렬" />
+
+- **검색 흐름** · 관광지 DB 인덱싱 → 키워드 후보 80개·연관어 확장 → 임베딩 코사인 재정렬 Top 5 → RAG + Tool 결합 답변
+- **실패 대비** · 임베딩 모델이 없거나 호출이 실패하면 키워드 점수만으로 결과를 돌려주고, LLM이 꺼져 있어도 대체 답변 제공
+- **문서 RAG** · FastAPI에서 PDF·TXT·MD를 1000자 청크(100자 겹침)로 나눠 ChromaDB에 저장, 유사도 0.20 미만은 버리고 출처를 붙여 답변
+
+`Spring AI` · `Spring Boot` · `FastAPI` · `sentence-transformers` · `ChromaDB` · `Vue 3`
+
 ---
 
 <p align="center">

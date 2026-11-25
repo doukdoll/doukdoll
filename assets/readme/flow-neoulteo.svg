@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="t d">
+<title id="t">여행 도우미 하이브리드 검색</title>
+<desc id="d">여행 도우미 하이브리드 검색: 관광지 DB 인덱싱 → 키워드 후보 · 연관어 → 임베딩 재정렬 → RAG + Tool 답변. 직접 다룬 단계는 임베딩 재정렬: 후보 80개 → 코사인 재정렬 Top 5 · 실패 시 키워드로 대체</desc>
+<rect x="1" y="1" width="1198" height="228" rx="16" fill="#FAFAF7" stroke="#E4E4DE" stroke-width="2"/>
+<text x="40" y="50" fill="#6B6B66" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="18" letter-spacing="2">NEOULTEO · RAG</text>
+<text x="40" y="86" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="28" font-weight="700">여행 도우미 하이브리드 검색</text>
+<rect x="40" y="114" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#1A1A18" stroke-width="2"/>
+<text x="165" y="151" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" text-anchor="middle">관광지 DB 인덱싱</text>
+<rect x="330" y="114" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#1A1A18" stroke-width="2"/>
+<text x="455" y="151" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" text-anchor="middle">키워드 후보 · 연관어</text>
+<rect x="620" y="114" width="250" height="60" rx="8" fill="#0F766E"/>
+<text x="745" y="151" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" font-weight="600" text-anchor="middle">임베딩 재정렬</text>
+<rect x="910" y="114" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#1A1A18" stroke-width="2"/>
+<text x="1035" y="151" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" text-anchor="middle">RAG + Tool 답변</text>
+<path d="M292 144 H324" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M317 138 L325 144 L317 150" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M582 144 H614" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M607 138 L615 144 L607 150" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M872 144 H904" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M897 138 L905 144 L897 150" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M745 176 V190" stroke="#0F766E" stroke-width="2"/>
+<text x="745" y="212" fill="#0F766E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="19" text-anchor="middle">후보 80개 → 코사인 재정렬 Top 5 · 실패 시 키워드로 대체</text>
+</svg>
