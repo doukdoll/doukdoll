@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="t d">
+<title id="t">해수어항 IoT</title>
+<desc id="d">해수어항 IoT: 센서 · MQTT 수신 → Spring Boot API → MySQL · Redis → 최신 상태 조회. 직접 다룬 단계는 센서 · MQTT 수신: 기기 시계 오차 → 서버 수신 시각 기준으로 최신값 판정</desc>
+<rect x="1" y="1" width="1198" height="228" rx="16" fill="#FAFAF7" stroke="#E4E4DE" stroke-width="2"/>
+<text x="40" y="50" fill="#6B6B66" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="18" letter-spacing="2">SMARTFISHTANK · PRIVATE</text>
+<text x="40" y="86" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="28" font-weight="700">해수어항 IoT</text>
+<rect x="40" y="114" width="250" height="60" rx="8" fill="#0F766E"/>
+<text x="165" y="151" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" font-weight="600" text-anchor="middle">센서 · MQTT 수신</text>
+<rect x="330" y="114" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#1A1A18" stroke-width="2"/>
+<text x="455" y="151" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" text-anchor="middle">Spring Boot API</text>
+<rect x="620" y="114" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#1A1A18" stroke-width="2"/>
+<text x="745" y="151" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" text-anchor="middle">MySQL · Redis</text>
+<rect x="910" y="114" width="250" height="60" rx="8" fill="#FFFFFF" stroke="#1A1A18" stroke-width="2"/>
+<text x="1035" y="151" fill="#1A1A18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="21" text-anchor="middle">최신 상태 조회</text>
+<path d="M292 144 H324" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M317 138 L325 144 L317 150" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M582 144 H614" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M607 138 L615 144 L607 150" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M872 144 H904" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M897 138 L905 144 L897 150" stroke="#1A1A18" stroke-width="2.5" fill="none"/>
+<path d="M165 176 V190" stroke="#0F766E" stroke-width="2"/>
+<text x="40" y="212" fill="#0F766E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif" font-size="19" text-anchor="start">기기 시계 오차 → 서버 수신 시각 기준으로 최신값 판정</text>
+</svg>

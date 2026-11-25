@@ -1,14 +1,8 @@
 <h1 align="center">안녕하세요, doukdoll입니다 👋</h1>
 
 <p align="center">
-  <strong>데이터와 자원을 연결하고, 동작의 이유까지 기록합니다.</strong><br />
-  백엔드 API부터 실시간 통신, 실행 환경과 운영 로그까지 관심을 두고 만들고 있습니다.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Backend-1F2937?style=flat-square" alt="Backend" />
-  <img src="https://img.shields.io/badge/Real--time-0F766E?style=flat-square" alt="Real-time" />
-  <img src="https://img.shields.io/badge/Systems-1F2937?style=flat-square" alt="Systems" />
+  <strong>작업이 왜 실패했는지, 다음 사람이 로그만 보고 다시 따라갈 수 있게 만듭니다.</strong><br />
+  Java · Spring Boot · WebSocket · Docker로 백엔드 API, 실시간 통신, 실행 환경과 운영 로그를 다룹니다.
 </p>
 
 ---
@@ -17,10 +11,13 @@
 
 화면에 보이는 기능 뒤에서 데이터가 어떻게 흐르고, 작업이 어떻게 끝나는지 살피는 일을 좋아합니다.
 문제가 생기면 로그와 재현 가능한 사례에서 원인을 찾고, 다음 사람이 다시 따라갈 수 있도록 남깁니다.
+흐름도의 청록색 칸이 제가 직접 다룬 단계이고, 비공개 프로젝트는 코드 대신 맡은 문제와 해결 과정을 적었습니다.
 
 ### 🖥️ G-Shared <sub>비공개 프로젝트</sub>
 
 > 쉬고 있는 GPU와 AI 연산이 필요한 사용자를 연결하는 GPU 공유 플랫폼
+
+<img src="./assets/readme/flow-g-shared.svg" width="100%" alt="GPU 워커 등록 → 작업 견적·배정 → 컨테이너 학습 → 결과 확인·정산. 직접 다룬 단계: 컨테이너 학습" />
 
 - **작업의 흐름** · GPU 워커 등록 → 작업 견적·배정 → 컨테이너 학습 → 결과 확인·정산
 - **살펴본 문제** · 작업 상태와 실행 결과의 일관성, 실패 처리, 여러 서비스에 흩어진 로그 추적
@@ -32,6 +29,8 @@
 ### 🔎 [circuit-agent](https://github.com/doukdoll/circuit-agent)
 
 > 회로의 연결을 읽고, 계산 결과와 판단 근거를 함께 보여주는 검사 데모
+
+<img src="./assets/readme/flow-circuit-agent.svg" width="100%" alt="QCV 파싱 → 부품·핀·넷 모델 구성 → 명목 FB 분압 계산 → JSON·HTML 보고서. 직접 다룬 단계: 분압 계산과 3단 판정" />
 
 - **만든 흐름** · QCV 파싱 → 부품·핀·넷 모델 구성 → 명목 FB 분압 계산 → JSON·HTML 보고서
 - **판정의 기준** · 정상·위반·사람 검토를 구분하고, 값 누락이나 모호한 연결은 검토 대상으로 처리
@@ -47,6 +46,8 @@
 
 > 해수어항의 센서 데이터를 모으고 상태를 살피는 IoT 프로젝트 · 백엔드·인프라
 
+<img src="./assets/readme/flow-smartfishtank.svg" width="100%" alt="센서·MQTT 수신 → Spring Boot API → MySQL·Redis → 최신 상태 조회. 직접 다룬 단계: MQTT 수신 시각 처리" />
+
 - **데이터 연결** · MQTT 기기 데이터 수집, Spring Boot API, MySQL·Redis 기반 데이터 처리
 - **해결한 문제** · 기기 시계 오차로 오래된 값이 최신으로 선택되던 오류를 서버 수신 시각 기준으로 수정
 - **함께 남긴 것** · Docker Compose 실행 방법, 환경변수 차이, MQTT 연결과 배포 트러블슈팅
@@ -58,6 +59,8 @@
 ### 🚆 [수어 기반 기차 예매 키오스크](https://github.com/doukdoll/sign_language_ver.2)
 
 > 웹캠의 수어 입력으로 역을 선택하고 열차를 조회하는 키오스크 프로토타입
+
+<img src="./assets/readme/flow-sign-kiosk.svg" width="100%" alt="MediaPipe 키포인트 → WebSocket → Spring Boot → Python·ONNX 추론. 직접 다룬 단계: WebSocket 세션 분리" />
 
 - **연결한 흐름** · MediaPipe 키포인트 → WebSocket → Spring Boot → Python·ONNX 추론
 - **다듬은 부분** · 사용자별 인식 세션 분리, 재접속·초기화, 카메라 종료와 예약 상태 처리
@@ -71,5 +74,6 @@
 
 <p align="center">
   <sub>작동하는 코드와 함께, 선택한 이유와 해결 과정을 남깁니다.</sub><br />
+  <sub>Contact · doukdoll75@naver.com</sub><br />
   <sub>Updated · 2026.11</sub>
 </p>
